@@ -1,6 +1,8 @@
 import { Component } from 'react';
 import { StyleSheet, View, Text } from 'react-native';
 
+// Fixed Dimensions
+
 export default class Example8 extends Component {
   render() {
     return (

@@ -9,6 +9,8 @@ import Example5 from './JavaTPoint/Example5';
 import Example6 from './JavaTPoint/Example6';
 import Example7 from './JavaTPoint/Example7';
 import Example8 from './JavaTPoint/Example8';
+import Example9 from './JavaTPoint/Example9';
+import Example10 from './JavaTPoint/Example10';
 
 export default function App() {
   return (
@@ -23,7 +25,10 @@ export default function App() {
       {/* <Example5 /> */}
       {/* <Example6 /> */}
       {/* <Example7 /> */}
-      <Example8 />
+      {/* <Example8 /> */}
+      {/* <Example9 /> */}
+      <Example10 />
+
     </View>
   );
 }
