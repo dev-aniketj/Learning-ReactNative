@@ -1,0 +1,38 @@
+import React from 'react';
+import { StyleSheet, View, Text } from 'react-native';
+
+// React Native Justify Content
+
+export default class Example12 extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <View style={styles.powderBlue} />
+        <View style={styles.skyBlue} />
+        <View style={styles.steelBlue} />
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'row',
+  },
+  powderBlue: {
+    width: 75,
+    height: 75,
+    backgroundColor: 'powderblue',
+  },
+  skyBlue: {
+    width: 75,
+    height: 75,
+    backgroundColor: 'skyblue',
+  },
+  steelBlue: {
+    width: 75,
+    height: 75,
+    backgroundColor: 'steelblue',
+  },
+});

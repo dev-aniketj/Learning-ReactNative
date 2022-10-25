@@ -1,6 +1,8 @@
 import { Component } from 'react';
 import { Alert, StyleSheet, View, Text, Button } from 'react-native';
 
+// React Native Button
+
 export default class Example10 extends Component {
   onPressButton() {
     Alert.alert('You clicked the button!');
