@@ -2,14 +2,13 @@ import React from 'react';
 import { StyleSheet, View, TextInput, Button } from 'react-native';
 
 // React Native Positioning Element with Flex
-// Example 2
+// Example 3
 
-export default class Example15 extends React.Component {
+export default class Example16 extends React.Component {
   state = {
     placeName: '',
     places: [],
   };
-
   placeNameChangeHolder = (val) => {
     this.setState({ placeName: val });
   };
@@ -23,11 +22,15 @@ export default class Example15 extends React.Component {
       <View style={styles.container}>
         <View style={styles.innerContainer}>
           <TextInput
-            style={{ textAlign: 'center' }}
+            style={{ textAlign: 'center', width: '70%' }}
             placeholder="An awesome place"
             onChangeText={this.placeNameChangeHolder}
           />
-          <Button title="Submit" onPress={this.placeSubmitHandler} />
+          <Button
+            style={{ width: '30%' }}
+            title="Submit"
+            onPress={this.placeSubmitHandler}
+          />
         </View>
       </View>
     );
@@ -40,10 +43,12 @@ const styles = StyleSheet.create({
     padding: 20,
     marginTop: 30,
     backgroundColor: '#fff',
-    justifyContent: 'center',
+    justifyContent: 'flex-start',
   },
   innerContainer: {
-    flex: 1,
+    width: '100%',
     flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
 });
